@@ -1,1 +1,12 @@
+#Regression Plots
+#using a dataset about University analitcs like avg sat score and price of tution
+
+sns.regplot(data=df,
+         y='Tuition',
+         x='SAT_AVG_ALL',
+         marker='^',
+         color='g')
+
+plt.show()
+plt.clf()
 
