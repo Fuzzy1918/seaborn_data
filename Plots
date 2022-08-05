@@ -1,6 +1,7 @@
 #Regression Plots
 #using a dataset about University analitcs like avg sat score and price of tution
 
+#show a avg line through a scatter plot
 sns.regplot(data=df,
          y='Tuition',
          x='SAT_AVG_ALL',
@@ -10,3 +11,11 @@ sns.regplot(data=df,
 plt.show()
 plt.clf()
 
+#Using a residual plot to determine if the relationship looks linear
+sns.residplot(data=df,
+          y='Tuition',
+          x='SAT_AVG_ALL',
+          color='g')
+
+plt.show()
+plt.clf()
